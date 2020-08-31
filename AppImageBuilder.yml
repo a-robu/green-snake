@@ -1,3 +1,8 @@
+
+# Note that this file was made by adapting the example
+# from the appimage-builder documentation:
+# https://appimage-builder.readthedocs.io/en/latest/examples/pyqt.html
+
 version: 1
 script:
   - rm -rf AppDir | true
