@@ -21,7 +21,7 @@ python snake.py
 
 # Building AppImage
 
-The game can be distribuited in the AppImage format. For this, the `appimage-builder` build tool is needed, which in turn needs `patchelf`. To install these two commands, run the following installation commands.
+The game can be distribuited in the AppImage format. The AppImage can be built with the `appimage-builder` tool. To install this (and its `patchelf` dependency), run the following installation commands.
 
 ```bash
 sudo apt install patchelf
@@ -34,4 +34,4 @@ Now, to build the distribution image, simply invoke the builder command.
 appimage-builder
 ```
 
-Now, a new file, named `green-snake-1.0.0-x86_64.AppImage` should have appeared in the current directory.
+A new file, named `green-snake-1.0.0-x86_64.AppImage` should have appeared in the current directory.
