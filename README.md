@@ -15,6 +15,6 @@ This game was written in Python 2. To run the game from the source code, execute
 ```bash
 virtualenv venv
 . venv/bin/activate
-pip install pygame
+pip install -r requirements.txt
 python snake.py
 ```
