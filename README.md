@@ -1,6 +1,6 @@
 # Introduction
 
-This program is a simple snake game. I made it when I was learning to program, back in 2010. In fact, it is my first, ever, programming project (beyond simple _helloworld_ programs).
+This program is a simple snake game. I made it when I was learning to program, in September 2010. In fact, it is my first, ever, programming project (beyond simple _helloworld_ programs).
 
 Originally, it was kept on Dropbox, but now I decided to recover it from there and host it on GitHub.
 
