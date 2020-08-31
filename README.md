@@ -10,7 +10,7 @@ It's quite a quirky game, but I am proud of it and fondly remember making it. He
 
 # Running from AppImage
 
-The pre-built AppImage files can be found on [the releases page](https://github.com/a-robu/green-snake/releases). They have been verified to work on Ubuntu 20.04 (but, in principle should work on any Linux distribution).
+Pre-built AppImage files can be found on [the releases page](https://github.com/a-robu/green-snake/releases). They have been verified to work on Ubuntu 20.04 (but, in principle should work on any Linux distribution).
 
 # Running from Source Code
 
