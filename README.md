@@ -21,7 +21,7 @@ python snake.py
 
 # Building AppImage
 
-The game can be distribuited in the AppImage format. For this, the `appimage-builder` build tool is needed - which in turn needs `patchelf`. To install these two commands, run the following installation commands.
+The game can be distribuited in the AppImage format. For this, the `appimage-builder` build tool is needed, which in turn needs `patchelf`. To install these two commands, run the following installation commands.
 
 ```bash
 sudo apt install patchelf
