@@ -18,3 +18,20 @@ virtualenv venv
 pip install -r requirements.txt
 python snake.py
 ```
+
+# Building AppImage
+
+The game can be distribuited in the AppImage format. For this, the `appimage-builder` build tool is needed - which in turn needs `patchelf`. To install these two commands, run the following installation commands.
+
+```bash
+sudo apt install patchelf
+sudo pip3 install appimage-builder
+```
+
+Now, to build the distribution image, simply invoke the builder command.
+
+```bash
+appimage-builder
+```
+
+Now, a new file, named `green-snake-1.0.0-x86_64.AppImage` should have appeared in the current directory.

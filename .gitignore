@@ -1,1 +1,5 @@
 *.pyc
+AppDir
+appimage-builder-cache
+venv
+green-snake-*-x86_64.AppImage

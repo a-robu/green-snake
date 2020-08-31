@@ -577,4 +577,7 @@ class Game:
             pygame.display.update()
             Clock.tick(self.FPS)
 
-Clock = pygame.time.Clock();Pos = Board();Cam = Camera();Snake = Snakes();G = Game();G.FrontEnd()
+if len(sys.argv) >= 2 and sys.argv[1] == '--smoketest':
+    pass
+else:
+    Clock = pygame.time.Clock();Pos = Board();Cam = Camera();Snake = Snakes();G = Game();G.FrontEnd()
