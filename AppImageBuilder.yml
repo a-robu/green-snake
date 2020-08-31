@@ -34,6 +34,7 @@ AppDir:
       PYTHONHOME: '${APPDIR}/usr'
       # The next line allows us to import modules installed by pip.
       PYTHONPATH: '${APPDIR}/deps'
+      SNAKE_FILES_PATH: '${APPDIR}/usr/src/files'
 
   test:
     ubuntu:

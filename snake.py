@@ -1,3 +1,6 @@
+#!/usr/bin/env python2
+
+import os
 import os.path
 import pygame, sys
 from random import randint
@@ -6,6 +9,11 @@ from pygame.transform import rotate
 from pygame.image import load
 from pygame.locals import FULLSCREEN
 pygame.init()
+
+BASE_PATH = 'files'
+
+if 'SNAKE_FILES_PATH' in os.environ:
+    BASE_PATH = os.environ['SNAKE_FILES_PATH']
 
 class Board:
     def __init__(self):
@@ -28,25 +36,25 @@ class Board:
         self.walls = []
         self.heads = []
         for i in range(self.snakeAnimationFrames):
-            frame = load(os.path.join('files', 'head%d.png' % (i))).convert_alpha()
+            frame = load(os.path.join(BASE_PATH, 'head%d.png' % (i))).convert_alpha()
             self.heads.append(frame)
         for i in range(self.backRandomFrames):
-            back  = load(os.path.join('files', 'back%d.png' % (i))).convert_alpha()
+            back  = load(os.path.join(BASE_PATH, 'back%d.png' % (i))).convert_alpha()
             self.backs.append(back)
         for i in range(14):
-            wall  = load(os.path.join('files', 'wall%d.png' % (i))).convert_alpha()
+            wall  = load(os.path.join(BASE_PATH, 'wall%d.png' % (i))).convert_alpha()
             self.walls.append(wall)
-        self.bodycn     = load(os.path.join('files', 'bodycn.png')).convert_alpha()
-        self.bodyst     = load(os.path.join('files', 'bodyst.png')).convert_alpha()
-        self.foodSprite = load(os.path.join('files', 'food.png')).convert_alpha()
-        self.tailSprite = load(os.path.join('files', 'tail.png')).convert_alpha()
-        self.foodSprite = load(os.path.join('files', 'food.png')).convert_alpha()
-        G.background    = load(os.path.join('files', 'background.png')).convert_alpha()
-        G.frontend      = load(os.path.join('files', 'frontend.jpg'))
-        G.newline       = load(os.path.join('files', 'newline.png')).convert_alpha()
-        G.setline       = load(os.path.join('files', 'setline.png')).convert_alpha()
-        G.quitline      = load(os.path.join('files', 'quitline.png')).convert_alpha()
-        G.select        = load(os.path.join('files', 'selectlevel.png')).convert_alpha()
+        self.bodycn     = load(os.path.join(BASE_PATH, 'bodycn.png')).convert_alpha()
+        self.bodyst     = load(os.path.join(BASE_PATH, 'bodyst.png')).convert_alpha()
+        self.foodSprite = load(os.path.join(BASE_PATH, 'food.png')).convert_alpha()
+        self.tailSprite = load(os.path.join(BASE_PATH, 'tail.png')).convert_alpha()
+        self.foodSprite = load(os.path.join(BASE_PATH, 'food.png')).convert_alpha()
+        G.background    = load(os.path.join(BASE_PATH, 'background.png')).convert_alpha()
+        G.frontend      = load(os.path.join(BASE_PATH, 'frontend.jpg'))
+        G.newline       = load(os.path.join(BASE_PATH, 'newline.png')).convert_alpha()
+        G.setline       = load(os.path.join(BASE_PATH, 'setline.png')).convert_alpha()
+        G.quitline      = load(os.path.join(BASE_PATH, 'quitline.png')).convert_alpha()
+        G.select        = load(os.path.join(BASE_PATH, 'selectlevel.png')).convert_alpha()
 
     def RenderBackground(self):
         self.backSurf = pygame.Surface((len(self.P)*self.sSize,len(self.P[0])*self.sSize))
