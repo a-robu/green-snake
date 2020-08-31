@@ -1,14 +1,16 @@
 # Introduction
 
-This is repository holds the first thing I ever programmed (beyond simple hello world programs). Originally it was kept on Dropbox and I recovered it from there.
+This program is a simple snake game. I made it when I was learning to program, back in 2010. In fact, it is my first, ever, programming project (beyond simple _helloworld_ programs).
 
-It's quite quirky, but I have a fond memory of making it. Here is a screenshot from the simple gameplay.
+Originally, it was kept on Dropbox, but now I decided to recover it from there and host it on GitHub.
+
+It's quite a quirky game, but I am proud of it and fondly remember making it. Here is a screenshot from the simple gameplay.
 
 ![gameplay-screenshot](gameplay-screenshot.png)
 
 # Running from Source Code
 
-This game is written in Python 2. To run the game from the source code, execute the following commands to install `pygame` locally with _virtualenv_.
+This game was written in Python 2. To run the game from the source code, execute the following commands to install `pygame` locally with _virtualenv_.
 
 ```bash
 virtualenv venv
