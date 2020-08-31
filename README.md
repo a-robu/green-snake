@@ -8,6 +8,10 @@ It's quite a quirky game, but I am proud of it and fondly remember making it. He
 
 ![gameplay-screenshot](gameplay-screenshot.png)
 
+# Running from AppImage
+
+The pre-built AppImage files can be found on [the releases page](https://github.com/a-robu/green-snake/releases). They have been verified to work on Ubuntu 20.04 (but, in principle should work on any Linux distribution).
+
 # Running from Source Code
 
 This game was written in Python 2. To run the game from the source code, execute the following commands to install `pygame` locally with _virtualenv_. These steps are known to work on Ubuntu 20.04.
