@@ -15,7 +15,7 @@ AppDir:
     id: uk.andreirobu.green-snake
     name: green-snake
     icon: utilities-terminal
-    version: 1.0.0
+    version: 1.0.1
     exec: usr/bin/python2.7
     exec_args: "$APPDIR/usr/src/snake.py $@"
 
