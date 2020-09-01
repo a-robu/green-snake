@@ -23,7 +23,7 @@ pip install -r requirements.txt
 python snake.py
 ```
 
-# Building AppImage
+# Building the AppImage
 
 The game can be distribuited in the AppImage format. The AppImage can be built with the `appimage-builder` tool. To install this (and its `patchelf` dependency), run the following installation commands.
 
